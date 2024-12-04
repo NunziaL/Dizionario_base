@@ -11,11 +11,9 @@ Implementa una classe in C++ chiamata **`DizionarioEsteso`**, che rappresenta un
    - **Cancella**: Rimuove una coppia dato il valore della chiave. 
    - **Recupera**: Restituisce il valore associato a una chiave specifica. (é giá implementata nel codice base)
    - **Appartiene**: Verifica se una chiave è presente nel dizionario.
+   - **Stampa**: Stampa il contenuto del dizionario in un formato leggibile. (é giá implementata nel codice base)
 
-2. **Visualizzazione**
-   - Stampa il contenuto del dizionario in un formato leggibile.
-
-3. **Hashing Chiuso** 
+2. **Hashing Chiuso** 
   Le collisioni sono gestite tramite la ricerca di posizioni alternative. É possibile scegliere tra Linear Probing e Double Hashing.
    - La funzione di hash è basata sulla somma dei valori ASCII dei caratteri della stringa, modulo la dimensione della tabella (é giá implementata nel codice base):
      ```cpp
@@ -34,6 +32,9 @@ Implementa una classe in C++ chiamata **`DizionarioEsteso`**, che rappresenta un
     -  Modificare le funzioni di Cancella, Modifica, Recupera e Appartiene: se nella posizione restituita dall'hashFunction non é presente la chiave cercata:
          - Double hasching: richiamare **findSlot** sul valore restituito dadall'hashFunction per trovare la posizione corretta in cui é inserita la chiave cercata
          - Linear Probing: scansionare tutte le celle successive a quella restituita dadall'hashFunction fino a trovare una piena (se la chiave é uguale a quella cercata continuo con il metodo, altrimenti do errore di chiave non esistente)
+     
+3. **Main**
+   Modificare il main utilizzando i nuovi metodi implementati e aggiungendo uno o piú casi di collisione. Inserire le stampe necessarie per mostrare il corretto funzionamento dei metodi implementati.
 
 ## Dettagli Tecnici
 
