@@ -2,7 +2,7 @@
 
 ## Descrizione del Progetto
 
-Implementa una classe in C++ chiamata **`DizionarioEsteso`**, che rappresenta un dizionario basato su una tabella hash. La classe supporta operazioni base per la gestione delle coppie `<chiave, valore>` e offre funzionalità avanzate per operazioni insiemistiche sulle chiavi.
+Implementa una classe in C++ chiamata **`DizionarioEsteso`**, che rappresenta un dizionario basato su una tabella hash. La classe supporta operazioni base per la gestione delle coppie `<chiave, valore>` e offre funzionalità per gestire le collisioni.
 
 ## Funzionalità
 
